@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Amos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" alt="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-container">
+            <div class="hero-text">
+                <p>Interaction Design Student</p>
+                <h1>Hi, I'm Amos From Singapore</h1>
+            </div>
+        </div>
+    </div>
+<!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="bio">Hello, my name is Amos. I am 22 this year. I love to come up with designs that help people reach their objectives in the best way possible as it gives 
+                        me a great sense of accomplishment. I have learned the development of programs, websites, interactive applications and web applications through programming concepts 
+                        from my Nitec & Higher Nitec courses at ITE. I am currently pursuing a Diploma in Interaction Design at Nanyang Polytechnic.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('software-skills')">Software Skills</p>
+                    </div>
+                    <!-- skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Design</span><br>UI/UX Design, Web Design, Branding, Graphic Design</li>
+                            <li><span>Programming</span><br>Web Development (HTML, CSS, & JavaScript)</li>
+                            <li><span>Others</span><br>Video Production, Video Editing</li>
+                        </ul>
+                    </div>
+                    <!-- experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span id="tab-contents-span">October 2021 - December 2021</span><span>Webdorks Pte Ltd</span><br>Web Design/Web Developer Intern</li>
+                            <li><span id="tab-contents-span">January 2019 - March 2019</span><span>Bideed Pte Ltd</span><br>Project Manager Intern</li>
+                        </ul>
+                    </div>
+                    <!-- education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span id="tab-contents-span">2022 - Present</span><span>Nanyang Polytechnic</span><br>Diploma in Interaction Design</li>
+                            <li><span id="tab-contents-span">2020 - 2021</span><span>ITE College Central</span><br>Higher Nitec in IT Applications Development</li>
+                            <li><span id="tab-contents-span">2018 - 2019</span><span>ITE College Central</span><br>Nitec in Web Applications</li>
+                            <li><span id="tab-contents-span">2014 - 2017</span><span>Northbrooks Secondary School</span><br>GCE 'N' Levels</li>
+                            <li><span id="tab-contents-span">2007 - 2013</span><span>Northview Primary School</span><br>PSLE</li>
+                        </ul>
+                    </div>
+                    <!-- software skills -->
+                    <div class="tab-contents" id="software-skills">
+                        <ul>
+                            <li><span>Adobe</span><br>Adobe XD, Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, Adobe InDesign, Adobe Dreamweaver</li>
+                            <li><span>Microsoft</span><br>Microsoft Word, Microsoft Powerpoint, Microsoft Excel</li>
+                            <li><span>3D Softwares</span><br>Blender, Twinmotion</li>
+                            <li><span>Others</span><br>Visual Studio Code, Google Docs, Google Slides, WordPress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="tab-titles">
+                <p class="projects-tab-links active-link" onclick="opentab2('nitec')">Nitec Projects</p>
+                <p class="projects-tab-links" onclick="opentab2('higher-nitec')">Higher Nitec Projects</p>
+                <p class="projects-tab-links" onclick="opentab2('diploma')">Diploma Projects</p>
+            </div>
+            <!-- nitec projects -->
+            <div class="projects-tab-contents active-tab" id="nitec">
+                <!-- websites/webpages -->
+                <h1>Websites</h1>
+                <p>Here are some of my beginner works on websites/webpages developed using HTML and CSS:</p>
+                <li>A website for users to find out more about the brand, products, and contact of a company. E.g. Off-White.</li>
+                <li>Game store company landing page for users to find out more about the brand, the games, and contact for the company.</li>
+                <li>Internship company landing page for users to find out more about the company, sign up for a account, and direct them to download the app. (Group project with my partner during our internship at the company)</li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/off-white-website.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/play-world-website.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/bideed-landing-page.mp4" type="video/mp4">
+                        </video>
+                    </div>  
+                </div>
+                <!-- adobe animate -->
+                <h1>Interactive Applications</h1>
+                <p>Here are some of my works on interactive applications with media elements and user interface components that are done using Adobe Animate:</p>
+                <li>Interactive sushi game that tests memory by requiring users to complete the game by clicking the sushis in a sequence.</li>
+                <li>Interactive application that allows users to click on their preferred side (turtle/monkey), and the animal will be following their cursor on the map.</li>
+                <li>Interactive coffee game that tests user's memory by requiring them to complete the game by clicking the coffee colors in a sequence. (Group project with 1 other person)</li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/sushi_game.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/turtle_monkey_game.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/coffee_game.mp4" type="video/mp4">
+                        </video>
+                    </div>  
+                </div>
+                <!-- adobe indesign -->
+                <h1>Interactive Publications</h1>
+                <p>Here are both of my works on interactive publications completed with media assets to promote movies that are done using Adobe InDesign:</p>
+                <li>Joker - 2019 Film</li>
+                <li>Weathering With You - 2019 Film</li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/joker.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/weathering-with-you.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- higher nitec projects -->
+            <div class="projects-tab-contents" id="higher-nitec">
+                <!-- wordpress -->
+                <h1>Websites</h1>
+                <p>Here are both of my works on e-commerce websites built using WordPress and locally hosted using XAMPP:</p>
+                <li>A website that allow users to find out more information on the company, shop for products, add products to cart, and make payment. E.g. Nike</li>
+                <li>Web Content Management course website that allow users to shop for chapters of the course and make payment for them.</li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/nike-website.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/wcm-website.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!-- websites -->
+                <h1>Websites</h1>
+                <p>Here are both of my works on responsive & mobile-friendly websites developed using HTML, CSS, JavaScript, jQuery, PHP, and Bootstrap:</p>
+                <li>Training company website that promotes courses and allow users to register for the courses. It also allow admins to login and access the administrative interface and its functionalities.</li>
+                <li>Watch website that promotes watches, allow users to register, and contact the company.</li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/training-website.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/watches-website.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!-- webpages -->
+                <h1>Webpages</h1>
+                <p>Here are some of my works on calculators and a hangman game on a webpage developed using HTML, CSS, and JavaScript:</p>
+                <li>BMI calculator that allows users to calculate BMI and get weight category by inputting their height and weight in the fields.</li>
+                <li>Volume calculator that allows users to calculate volume and get volume specification by inputting length, width, and height in the fields.</li>
+                <li>Hangman game that allows users to score by guessing the letters of the given word and input them by clicking on the keyboard.</li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/bmi-cal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/vol-cal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/hangman-game.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!-- app prototype -->
+                <h1>App Prototype</h1>
+                <p>Here is one of my beginner work on a app prototype for a movie app done using Adobe XD:</p>
+                <li>Movie application prototype for the latest movies, movie details, booking of seats, and transactions.</li>
+                <div class="flex-container">
+                    <div>
+                        <img src="images/Movie-app-prototype-homepage.jpg" width="288" height="512" alt="">
+                    </div>
+                    <div>
+                        <img src="images/Movie-app-prototype-details-page.jpg" width="288" height="512" alt="">
+                    </div>
+                    <div>
+                        <img src="images/Movie-app-prototype-selection-page.jpg" width="288" height="512" alt="">
+                    </div>
+                    <div>
+                        <img src="images/Movie-app-prototype-transaction-page.jpg" width="288" height="512" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- diploma projects -->
+            <div class="projects-tab-contents" id="diploma">
+                <h1>Mobile App Prototype</h1>
+                <p>Here are some of my works on mobile app prototypes done using Adobe XD:</p>
+                <li>Built a revamped functional mobile app prototype for the brand called Birds of Paradise which is a local gelato company in Singapore. <a href="https://xd.adobe.com/view/c9d0ab64-7538-4f9d-997c-7221e2ca895e-9c83/screen/3fcd87f2-c7ef-4b60-9d89-527bbb17c066">Link to the interactive prototype</a></li>
+                <div class="flex-container">
+                    <div>
+                        <video width="512" height="288" controls>
+                            <source src="videos/bop_prototype_demo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+    </div>
+<script src="script.js">
+</script>
+</body>
+</html>

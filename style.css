@@ -1,0 +1,194 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #FFFFFF;
+    color: #000000; /* text color */
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/andrew-mt-tHiDL7vAWFo-unsplash.jpg);
+    background-size: cover;
+    background-position: top 10% center;
+}
+
+.container{
+    padding: 10px 10%;
+    background: #FFFFFF;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img[alt="logo"]{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.hero-container{
+    padding: 10px 10%;
+    color: #FFFFFF;
+}
+
+.hero-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+/*------about------*/
+
+#about{
+    padding: 100px 0;
+    color: #000000;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%; /* left column width */
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-col-2{
+    flex-basis: 60%; /* right column width */
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.bio{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 40px 0 40px;
+}
+
+.tab-links, .projects-tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after, .projects-tab-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after, .projects-tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li, .projects-tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.tab-contents ul li span, .projects-tab-contents ul li span{
+    color: #666666;
+    font-size: 16px;
+}
+
+#tab-contents-span::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.tab-contents, .projects-tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab, .projects-tab-contents.active-tab{
+    display: block;
+}
+
+/*------projects------*/
+
+#projects{
+    padding: 50px 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container > div{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.projects-tab-contents {
+    list-style-type: square;
+}
+
+.projects-tab-contents h1{
+    margin-bottom: 10px;
+}
+
