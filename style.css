@@ -76,6 +76,27 @@ nav ul li a:hover::after{
 .hero-text h1{
     font-size: 60px;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resume-button{ /*--view resume---*/
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .5s ease-out;
+    background: linear-gradient(to left, transparent 50%, #FFFFFF 50%) right;
+    background-size: 250%;
+}
+
+.resume-button:hover{
+    color: #000000;
+    background-position: left;
 }
 
 /*------about------*/
@@ -120,7 +141,7 @@ nav ul li a:hover::after{
     margin: 40px 0 40px;
 }
 
-.tab-links, .projects-tab-links{
+.tab-links{
     margin-right: 50px;
     font-size: 20px;
     font-weight: 500;
@@ -128,7 +149,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.tab-links::after, .projects-tab-links::after{
+.tab-links::after{
     content: '';
     width: 0;
     height: 2px;
@@ -139,17 +160,17 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.tab-links.active-link::after, .projects-tab-links.active-link::after{
+.tab-links.active-link::after{
     width: 100%;
 }
 
-.tab-contents ul li, .projects-tab-contents ul li{
+.tab-contents ul li{
     list-style: none;
     margin: 10px 0;
     font-size: 18px;
 }
 
-.tab-contents ul li span, .projects-tab-contents ul li span{
+.tab-contents ul li span{
     color: #666666;
     font-size: 16px;
 }
@@ -159,11 +180,11 @@ nav ul li a:hover::after{
     white-space: pre;
 }
 
-.tab-contents, .projects-tab-contents{
+.tab-contents{
     display: none;
 }
 
-.tab-contents.active-tab, .projects-tab-contents.active-tab{
+.tab-contents.active-tab{
     display: block;
 }
 
@@ -172,23 +193,73 @@ nav ul li a:hover::after{
 #projects{
     padding: 50px 0;
 }
+  
+.column1{
+    flex: 50%;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+}
 
-.flex-container {
+.column1 h1, .column1 p{
+    padding-bottom: 25px;
+}
+
+.column2{
+    flex: 50%;
+    margin-top: 100px;
+    padding-left: 100px;
+}
+
+.column2 img{
+    width: 100%;
+    height: auto;
+}
+
+.button1, .button2{
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .5s ease-out;
+    background: linear-gradient(to left, #FFFFFF 50%, #000000 50%) right;
+    background-size: 250%;
+}
+
+.button1:hover, .button2:hover{
+    color: #FFFFFF;
+    background-position: left;
+}
+
+.button2{
+    margin-right: 50px;
+}
+
+/*------footer------*/
+
+.footer-container{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    background: #F5F5F5;
+ }
+
+.email, .number{
+    width: 50%;
+    text-align: center;
+    padding: 5% 10%;
 }
 
-.flex-container > div{
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 40px;
+.email span, .number span{
+    font-weight: 600;
 }
 
-.projects-tab-contents {
-    list-style-type: square;
+.copyright{
+    background: #F5F5F5;
+    text-align: center;
+    padding-bottom: 2%;
 }
-
-.projects-tab-contents h1{
-    margin-bottom: 10px;
-}
-
