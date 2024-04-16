@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | BOP</title>
+    <title>Project</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,55 +22,72 @@
             </nav>
         </div>
     </div>
-<!--hero-->
-    <div class="project1-hero-container">
-        <div class="hero-text">
-            <h1>Birds of Paradise</h1>
-            <p>App and Website</p>
-            <a class="bth-button" href="index.html">Back to Home</a>
-        </div>
-    </div>
+
 <!--project info-->
     <div id="projects-about">
         <div class="container">
             <h1 class="sub-title">Project Overview</h1>
-            <p class="bio">This project is a school assignment that required me to design a revamped app and website homepage for a local brand in Singapore.
-                I was required to first build a design system that includes all the UI elements necessary for the screens, stylescapes to communicate
-                a certain look and feel, and more. Afterwards, I designed the app and website homepage according to the design system. *This project is for a school assignment so some functions/pages may not be working or completed.
+            <p class="bio">This project is a school assignment that required me to design a revamped app and website for a local brand in Singapore.
+                The process included UX research on the existing app and website, creating a design system for UI elements, and crafting mood boards and style scapes to define the visual direction.
+                Finally, I developed prototypes for both the app and website. 
             </p>
-            <!-- design system -->
-            <div class="project-row">
-                <div class="column1">
-                    <h1>Design System</h1>
-                    <p> This design system is made up of many components, rules, and style guides that aids in the design and development of
-                        the app and website. In this case, it aids me in designing the interfaces of the app and website.
-                    </p>
-                    <div class="button-row">
-                        <a class="pdf-button" href="./pdf/DesignSystem - BOP.pdf" target=”_blank”>View Design System</a>
-                        <!-- <button class="button2" id="openLink2">Website Interactive Prototype</button> -->
+        </div>
+    </div>       
+
+<!--gallery-->
+    <div id="image-gallery">
+        <div class="container">
+            <h1 class="sub-title">Project Gallery</h1>
+            <div class="gallery">
+                <div class="image-container">
+                <img src="images/bop-ds.png" alt="Image 1">
+                <div class="overlay">
+                    <p>Design System</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="images/bop-app-01.png" alt="Image 2">
+                    <div class="overlay">
+                    <p>App Prototype</p>
                     </div>
                 </div>
-                <div class="column2">
-                    <img src="images/bop-design-system.png" alt="">
-                </div>
-            </div> 
-            <!-- prototypes -->
-            <div class="project-row">
-                <div class="column1">
-                    <h1>App and Website Prototypes</h1>
-                    <p>With the help of the design system, I created the prototypes which are functional and not just informational. Both the app and website is prototyped for testing.
-                    </p>
-                    <div class="button-row">
-                        <button class="button1" id="openLink1">View App Prototype</button>
-                        <button class="button2" id="openLink2">View Website Prototype</button> 
+                <div class="image-container">
+                    <img src="images/bop-app-02.png" alt="Image 3">
+                    <div class="overlay">
+                    <p>App Prototype</p>
                     </div>
                 </div>
-                <div class="column2">
-                    <img src="images/bop-mobile-desktop.png" alt="">
+                <div class="image-container">
+                    <img src="images/bop-web-01.png" alt="Image 4">
+                    <div class="overlay">
+                    <p>Website Prototype</p>
+                    </div>
                 </div>
-            </div> 
-        </div>  
+                <div class="image-container">
+                    <img src="images/bop-web-02.png" alt="Image 5">
+                    <div class="overlay">
+                    <p>Website Prototype</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="images/bop-web-03.png" alt="Image 6">
+                    <div class="overlay">
+                    <p>Website Prototype</p>
+                    </div>
+                </div>
+                <!-- Repeat for other images -->
+            </div>
+            <!-- Modal -->
+            <div class="modal">
+            <span class="close">&times;</span>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            <img class="modal-content" id="modal-img">
+            <div id="modal-caption"></div>
+            </div>
+        </div>
     </div>
+
 <!-- footer -->
     <div class="footer-container">
         <div class="email">
@@ -80,16 +97,7 @@
             <p><span>Phone: </span>+65 9665 8627</p>
         </div>
     </div>
-<p class="copyright">&copy; 2024 Amos Choo Zi Yang. All Rights Reserved. Built with HTML, CSS, and JavaScript.</p>
-<script>
-    document.getElementById("openLink1").addEventListener("click", function() {
-        window.open("https://xd.adobe.com/view/c9d0ab64-7538-4f9d-997c-7221e2ca895e-9c83/", "_blank");
-    });
-
-    document.getElementById("openLink2").addEventListener("click", function() {
-        window.open("https://xd.adobe.com/view/e0a06703-6b69-4ba4-9577-716122d6838e-b5f3/", "_blank");
-    });
-</script>
+<p class="copyright">&copy; 2024 Amos Choo Zi Yang. All Rights Reserved. Designed with HTML, CSS, and JavaScript, and best viewed on desktop.</p>
 <script src="script.js">
 </script>
 </body>

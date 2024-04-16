@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website | Amos</title>
+    <title>Amos - Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
 <body>
 <!--navbar-->
     <div id="header">
-        <div class="container">
+        <div class="nav-container">
             <nav>
                 <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
                 <ul id="sidemenu">
@@ -24,14 +24,16 @@
             </nav>
         </div>
     </div>
+
 <!--hero-->
     <div class="hero-container">
         <div class="hero-text">
-            <h1>Hi, I'm Amos</h1>
-            <p>UI/UX Designer</p>
-            <a class="resume-button" href="./pdf/Resume - Amos.pdf" target=”_blank”>View Resume</a>
+            <h1>Hello, I'm Amos.</h1>
+            
+            <a class="resume-button" href="./pdf/Resume-AmosChooZiYang.pdf" target=”_blank”>View Resume</a>
         </div>
     </div>
+
 <!--about-->
     <div id="about">
         <div class="container">
@@ -61,14 +63,14 @@
                     <!-- experience -->
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span id="tab-contents-span">October 2021 - December 2021</span><span>Webdorks Pte Ltd</span><br>Web Design/Web Developer Intern</li>
-                            <li><span id="tab-contents-span">January 2019 - March 2019</span><span>Bideed Pte Ltd</span><br>Project Manager Intern</li>
+                            <li><span id="tab-contents-span">October 2021 - December 2021</span><span>Webdorks Pte Ltd</span><br>Web Design Intern</li>
+                            <li><span id="tab-contents-span">January 2019 - March 2019</span><span>Bideed Pte Ltd</span><br>Intern</li>
                         </ul>
                     </div>
                     <!-- education -->
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span id="tab-contents-span">2022 - Present</span><span>Nanyang Polytechnic</span><br>Diploma in Interaction Design</li>
+                            <li><span id="tab-contents-span">2022 - 2025</span><span>Nanyang Polytechnic</span><br>Diploma in Interaction Design</li>
                             <li><span id="tab-contents-span">2020 - 2021</span><span>ITE College Central</span><br>Higher Nitec in IT Applications Development</li>
                             <li><span id="tab-contents-span">2018 - 2019</span><span>ITE College Central</span><br>Nitec in Web Applications</li>
                             <li><span id="tab-contents-span">2014 - 2017</span><span>Northbrooks Secondary School</span><br>GCE 'N' Levels</li>
@@ -87,6 +89,7 @@
             </div>
         </div>
     </div>
+
 <!--projects-->
     <div id="projects">
         <div class="container">
@@ -95,51 +98,46 @@
             <div class="project-row">
                 <div class="column1">
                     <h1>Birds of Paradise App and Website</h1>
-                    <p>I redesigned the mobile app and website for Birds of Paradise, a local gelato company in Singapore. 
-                        The process included UX research on the existing app and website, creating a design system for UI elements, and crafting mood boards and style scapes to define the visual direction. 
-                        Finally, I produced high-fidelity interactive prototypes for the app and website.
-                    </p>
+                    <p>Revamped mobile app and website prototype for Birds of Paradise, a local gelato company in Singapore.</p>
                     <div class="button-row">
                         <button class="button1" onclick="window.location.href = 'project1.html';">View More</button>
                         <!-- <button class="button2" id="openLink2">Website Interactive Prototype</button> -->
                     </div>
                 </div>
                 <div class="column2">
-                    <img src="images/bop-mobile-desktop.png" alt="">
+                    <img src="images/bop-main.png" alt="">
                 </div>
             </div> 
             <!-- timepiggy -->
             <div class="project-row">
                 <div class="column1">
                     <h1>TimePiggy</h1>
-                    <p>I developed a mobile app prototype for a time bank, designed to facilitate users in grasping the concept of time banking. The process involved ideation through sketching, 
-                        initial creation of low-fidelity wireframes, collecting user feedback, refining the wireframes into high-fidelity versions, and ultimately the development of an interactive prototype.
-                    </p>
+                    <p>Mobile app prototype for a time bank, designed to facilitate users in grasping the concept of time banking.</p>
                     <div class="button-row">
                         <button class="button1" onclick="window.location.href = 'project2.html';">View More</button>
                     </div>
                 </div>
                 <div class="column2">
-                    <img src="images/timepiggy.png" alt="">
+                    <img src="images/tp-main.png" alt="">
                 </div>
             </div> 
-            <!-- mech -->
+            <!-- wholesomemeals -->
             <div class="project-row">
                 <div class="column1">
-                    <h1>Mech</h1>
-                    <p>I developed a website for my startup concept using HTML, CSS, and JavaScript. The process included the creation of both low-fidelity and high-fidelity wireframes, 
-                        ensuring the incorporation of essential content. Following this, I actively sought and incorporated user feedback. Lastly, I coded the website.
+                    <h1>WholesomeMeals</h1>
+                    <p>Food ordering website that offers healthy and nutritious meals.
                     </p>
                     <div class="button-row">
                         <button class="button1" onclick="window.location.href = 'project3.html';">View More</button>
                     </div>
                 </div>
                 <div class="column2">
-                    <img src="images/mech.png" alt="">
+                    <img src="images/wm-main.png" alt="">
                 </div>
             </div> 
         </div>  
     </div>
+
 <!-- footer -->
     <div class="footer-container">
         <div class="email">
@@ -149,7 +147,7 @@
             <p><span>Phone: </span>+65 9665 8627</p>
         </div>
     </div>
-<p class="copyright">&copy; 2024 Amos Choo Zi Yang. All Rights Reserved. Built with HTML, CSS, and JavaScript.</p>
+<p class="copyright">&copy; 2024 Amos Choo Zi Yang. All Rights Reserved. Designed with HTML, CSS, and JavaScript, and best viewed on desktop.</p>
 <script src="script.js">
 </script>
 </body>

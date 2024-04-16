@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | Mech</title>
+    <title>Project</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,53 +22,72 @@
             </nav>
         </div>
     </div>
-<!--hero-->
-<div class="project3-hero-container">
-    <div class="hero-text">
-        <h1>Mech</h1>
-        <p>Custom Keyboards Website</p>
-        <a class="bth-button" href="index.html">Back to Home</a>
-    </div>
-</div>
+
 <!--project info-->
     <div id="projects-about">
         <div class="container">
             <h1 class="sub-title">Project Overview</h1>
-            <p class="bio">This project is a school assignment that required me to create a website for a custom keyboards
-                start-up using HTML, CSS, and JavaScript. *This project is for a school assignment so some functions/pages may not be working or completed.
+            <p class="bio">This project is a school assignment that required me to design and code a responsive food ordering website that
+                offers healthy and nutritious meals. The process involved setting website goals, researching target audiences and existing websites for inspiration, 
+                wireframing the layout, designing user interfaces, and coding the site using HTML, CSS, and JavaScript.
             </p>
-            <!-- concept sketches and user flow -->
-            <div class="project-row">
-                <div class="column1">
-                    <h1>Wireframes and Mock-ups</h1>
-                    <p>Wireframes and mock-ups that i've done for the webpages of the website, such as the home page, store page, and support 
-                        page.
-                    </p>
-                    <div class="button-row">
-                        <a class="pdf-button" href="./pdf/WireframesMockups - Mech.pdf" target=”_blank”>View Wireframes and Mock-ups</a>
-                    <!-- <button class="button2" id="openLink2">Website Interactive Prototype</button> -->
-                    </div>
-                </div>
-                <div class="column2">
-                    <img src="images/mech-wireframes-mockups.png" alt="">
-                </div>
-            </div> 
-            <!-- prototype -->
-            <div class="project-row">
-                <div class="column1">
-                    <h1>Website</h1>
-                    <p>Finally, I used HTML, CSS, and JavaScript to fully code out the webpages with interactivity.
-                    </p>
-                    <div class="button-row">
-                        <button class="button1" id="openLink3">View Website</button>
-                    </div>
-                </div>
-                <div class="column2">
-                    <img src="images/mech.png" alt="">
-                </div>
-            </div>
         </div>  
     </div>
+
+<!--gallery-->
+<div id="image-gallery">
+    <div class="container">
+        <h1 class="sub-title">Project Gallery</h1>
+        <div class="gallery">
+            <div class="image-container">
+            <img src="images/wm-uxr.png" alt="Image 1">
+            <div class="overlay">
+                <p>Research</p>
+            </div>
+            </div>
+            <div class="image-container">
+                <img src="images/wm-style-guide.png" alt="Image 2">
+                <div class="overlay">
+                <p>UI Style Guide</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/wm-web-wireframes.png" alt="Image 3">
+                <div class="overlay">
+                <p>Website Wireframe (Home Page)</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/wm-web-01.png" alt="Image 4">
+                <div class="overlay">
+                <p>Website Prototype (Home Page)</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/wm-web-02.png" alt="Image 5">
+                <div class="overlay">
+                <p>Website Prototype (Menu Page)</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="images/wm-web-app.png" alt="Image 6">
+                <div class="overlay">
+                <p>Desktop and Mobile</p>
+                </div>
+            </div>
+            <!-- Repeat for other images -->
+        </div>
+        <!-- Modal -->
+        <div class="modal">
+        <span class="close">&times;</span>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+        </div>
+    </div>
+</div>
+
 <!-- footer -->
     <div class="footer-container">
         <div class="email">
@@ -78,12 +97,7 @@
             <p><span>Phone: </span>+65 9665 8627</p>
         </div>
     </div>
-<p class="copyright">&copy; 2024 Amos Choo Zi Yang. All Rights Reserved. Built with HTML, CSS, and JavaScript.</p>
-<script>
-    document.getElementById("openLink3").addEventListener("click", function() {
-        window.open("https://aczyg.github.io/mech/", "_blank");
-    });
-</script>
+<p class="copyright">&copy; 2024 Amos Choo Zi Yang. All Rights Reserved. Designed with HTML, CSS, and JavaScript, and best viewed on desktop.</p>
 <script src="script.js">
 </script>
 </body>
