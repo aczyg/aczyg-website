@@ -558,6 +558,7 @@ nav .fa{
     img[alt="logo"]{
         width: 120px;
     }
+    /*  
     nav .fa{
         display: block;
         font-size: 25px;
@@ -566,8 +567,8 @@ nav .fa{
         background: #FFFFFF;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -100%;
+        width: 100%;
         height: 100vh;
         padding-top: 50px;  
         z-index: 2;
@@ -582,7 +583,7 @@ nav .fa{
         top: 25px;
         left: 25px;
         cursor: pointer;
-    }
+    } */
     .hero-text h1{
         font-size: 40px;
     }
@@ -620,8 +621,12 @@ nav .fa{
     #software-skills-tab{
         display: none;
     }
+    .overlay{
+        display: none;
+    }
     .image-container {
         flex: 0 0 calc(50% - 20px); /* Adjust width for 2 by 2 layout */
+        pointer-events: none;
     }
     .prev {
         left: 200px;
@@ -641,11 +646,11 @@ nav .fa{
         font-size: 25px;
     }
     nav ul{
-        background: #FFFFFF;
+        background: #1C1D20;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -100%;
+        width: 50%;
         height: 100vh;
         padding-top: 50px;  
         z-index: 2;
@@ -653,17 +658,24 @@ nav .fa{
     }
     nav ul li{
         display: block;
-        margin: 25px;
+        margin: 40px;
+    }
+    nav ul li a{
+        color: #FFFFFF;
+    }
+    nav ul li a::after{
+        background: #FFFFFF;
     }
     nav ul .fa{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 40px;
+        left: 40px;
         cursor: pointer;
+        color: #FFFFFF;
     }
     .hero-text h1{
         font-size: 30px;
-        max-width: 250px;
+        max-width: 260px;
     }
     .hero-text p{
         font-size: 20px;
@@ -740,9 +752,13 @@ nav .fa{
     .gallery {
         flex-direction: column; /* Display images in a single column */
     }
+    .overlay {
+        display: none;
+    }
     .image-container {
         flex: 1 1 auto; /* Take up full width of the column */
         margin: 10px 0; /* Adjust margin for spacing */
+        pointer-events: none;
     }
     #about {
         margin: 50px 0;

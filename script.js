@@ -20,7 +20,7 @@ function openmenu(){
 }
 
 function closemenu(){
-    sidemeu.style.right = "-200px";
+    sidemeu.style.right = "-100%";
 }
 
 /* gallery modal */
