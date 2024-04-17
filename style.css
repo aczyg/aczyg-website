@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
@@ -150,7 +150,8 @@ nav ul li a:hover::after{
 }
 
 .hero-text h1{
-    max-width: 350px;
+    font-weight: 500;
+    max-width: 320px;
     font-size: 40px;
     margin-bottom: 40px;
     overflow: hidden;
@@ -227,7 +228,7 @@ nav ul li a:hover::after{
 
 .sub-title{
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     color: #1C1D20;
 }
 
@@ -316,6 +317,7 @@ nav ul li a:hover::after{
 
 .column1 h1{
     font-size: 24px;
+    font-weight: 500;
 }
 
 .column1 p{
@@ -490,7 +492,7 @@ body.modal-open {
 }
 
 .email span, .number span{
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .copyright{
@@ -675,7 +677,7 @@ nav .fa{
     }
     .hero-text h1{
         font-size: 30px;
-        max-width: 300px;
+        max-width: 240px;
     }
     .hero-text p{
         font-size: 20px;
