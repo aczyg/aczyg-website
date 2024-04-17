@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-weight: 500;
+}
+
 html, body{
     scroll-behavior: smooth;
     height: 100%;
